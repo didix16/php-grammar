@@ -1,7 +1,7 @@
 {
   "name": "didix16/php-grammar",
   "type": "library",
-  "description": "A simple library to make Lexer and Parsers to build a language",
+  "description": "A simple library for make Lexer and Parsers to build a language",
   "keywords": ["lexer", "parser", "token", "grammar", "tokenizer", "simple", "build"],
   "homepage": "https://github.com/didix16/php-grammar",
   "license": "MIT",

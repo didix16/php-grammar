@@ -8,17 +8,17 @@ use Exception;
  * Class Parser
  * @package didix16\Grammar
  */
-abstract class Parser {
+abstract class Parser implements ParserInterface {
 
     /**
      * The lexer from we get the tokens
-     * @var Lexer
+     * @var LexerInterface
      */
     protected $input;
 
     /**
      * Current lookahead Token
-     * @var Token
+     * @var TokenInterface
      */
     protected $lookahead;
 
@@ -28,7 +28,7 @@ abstract class Parser {
      */
     protected $tokenList = [];
 
-    public function __construct(Lexer $input)
+    public function __construct(LexerInterface $input)
     {
         $this->input = $input;
         $this->lookahead = $this->input->nextToken();
@@ -73,7 +73,7 @@ abstract class Parser {
     /**
      * The main entry point of the grammar expression
      * Returns the list of tokens founded
-     * @return array
+     * @return TokenInterface[]
      */
     public abstract function parse() : array ;
 

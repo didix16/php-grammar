@@ -8,7 +8,7 @@ namespace didix16\Grammar;
  * Class Token
  * @package didix16\Grammar
  */
-class Token
+class Token implements TokenInterface
 {
     const NULL_TOKEN_TYPE = 0;
     const NULL_TOKEN_VALUE = NULL;

@@ -7,7 +7,7 @@ namespace didix16\Grammar;
  * Class Lexer
  * @package didix16\Grammar
  */
-abstract class Lexer {
+abstract class Lexer  implements LexerInterface {
 
     const NULL_TOKEN_TYPE = Token::NULL_TOKEN_VALUE;
     const NULL_TOKEN_VALUE = Token::NULL_TOKEN_TYPE;

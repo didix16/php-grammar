@@ -28,7 +28,7 @@ class Token implements TokenInterface
         $this->type = $type;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return "<$this->type, $this->value>";
     }
